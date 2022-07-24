@@ -3,7 +3,14 @@ const mongoose = require('mongoose');
 
 // connecting to localhost/system server
 // also tells the name of database which we are connecting to
-mongoose.connect('mongodb://localhost/issue_tracker_db');
+
+let URL = "mongodb+srv://issuetracker:yArVAgxnZeI0RFlE@cluster0.in1qv.mongodb.net/codeial?retryWrites=true&w=majority";
+
+mongoose.connect(URL,{
+    useNewUrlParser: true,
+    // useFindAndModify: false,
+    useUnifiedTopology: true
+  });
 
 //connection between database and mongoose is accessed by below code
 const db = mongoose.connection;
