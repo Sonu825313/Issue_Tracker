@@ -1,16 +1,16 @@
 // importing mongoose library
 const mongoose = require('mongoose');
 
+let MongoObj = {};
+
+if(process.env.Pro) {
+    MongoObj.useNewUrlParser =  true,
+    MongoObj.useUnifiedTopology = true
+}
+
 // connecting to localhost/system server
 // also tells the name of database which we are connecting to
-
-let URL = "mongodb+srv://issuetracker:yArVAgxnZeI0RFlE@cluster0.in1qv.mongodb.net/codeial?retryWrites=true&w=majority";
-
-mongoose.connect(URL,{
-    useNewUrlParser: true,
-    // useFindAndModify: false,
-    useUnifiedTopology: true
-  });
+mongoose.connect(process.env.MongoDB_URL,MongoObj);
 
 //connection between database and mongoose is accessed by below code
 const db = mongoose.connection;
