@@ -11,6 +11,7 @@ If you want to use this project for your project bug/issue tracker, you can do i
 5) Good to go and to be used.
 
 ## Hosted Link:-
+https://issuetracker1212.herokuapp.com/
 
 
 
@@ -36,9 +37,9 @@ If you want to use this project for your project bug/issue tracker, you can do i
 #� �I�s�u�u�e�_�T�r�a�c�k�e�r�
 �
 <br>
-�#� �I�s�s�u�e�_�t�r�a�c�k�e�r�
+#� �I�s�s�u�e�_�t�r�a�c�k�e�r�
 �
 <br>
-�#� �I�s�s�u�e�_�T�r�a�c�k�e�r�
+#� �I�s�s�u�e�_�T�r�a�c�k�e�r�
 �
 �
